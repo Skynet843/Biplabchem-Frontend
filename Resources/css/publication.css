@@ -230,8 +230,9 @@ body{
 }
 .card-images img{
   margin-top: 10px;
-  width: 70%;
-  max-width: 1000px;
+  width: auto;
+height:300px;
+/*  max-width: 1000px;*/
     border-radius: 5px;
 }
 .btn-section{
@@ -405,7 +406,8 @@ body{
     font-variant: none;
 }
 .card-images{
-    width: 100%;
+    width: auto;
+   height:300px;
 }
 .card-images img{
     margin-top: 10px;
