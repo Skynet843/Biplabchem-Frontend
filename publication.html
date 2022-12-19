@@ -1,64 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="icon" href="./Resources/img/favicon.png" type="image/gif" sizes="16x16">
+  <head>
+    <link
+      rel="icon"
+      href="./Resources/img/favicon.png"
+      type="image/gif"
+      sizes="16x16"
+    />
     <meta charset="UTF-8
-	  <meta name="keywords" content="Biplab Manna, Biplabchem, Chemistry, Publication, biplab manna, japan,kumamoto university,biplabchem.com">
-	  <meta name="author" content="Biplab Manna">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="keywords"
+      content="Biplab Manna, Biplabchem, Chemistry, Publication, biplab manna, japan,kumamoto university,biplabchem.com"
+    />
+    <meta name="author" content="Biplab Manna" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biplabchem.com : Publication</title>
     <script
       src="https://kit.fontawesome.com/780002843a.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./Resources/css/publication.css">
-</head>
-<body onscroll="navbarEffect()" onload="loadingeffect()">
-  <div id="loading">
-      
-  </div>
+    <link rel="stylesheet" href="./Resources/css/publication.css" />
+  </head>
+  <body onscroll="navbarEffect()" onload="loadingeffect()">
+    <div id="loading"></div>
     <!-- ! Navbar Start -->
     <div class="navbar-fluid" id="navbar">
-        <div class="header-container">
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-          <div class="brand">
-            <h3><i class="fas fa-atom"></i>&nbsp;Biplab Manna</h3>
-          </div>
-          <div class="nav-list">
-            <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/research">Research</a></li>
-              <li><a href="/publication">Publication</a></li>
-              <li><a href="/Gallery">Gallery</a></li>
-            </ul>
-          </div>
+      <div class="header-container">
+        <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+          >&#9776;</span
+        >
+        <div class="brand">
+          <h3><i class="fas fa-atom"></i>&nbsp;Biplab Manna</h3>
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/research">Research</a></li>
+            <li><a href="/publication">Publication</a></li>
+            <li><a href="/Gallery">Gallery</a></li>
+          </ul>
         </div>
       </div>
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="/">Home</a>
-        <a href="/research">Research</a>
-        <a href="/publication">Publication</a>
-        <a href="/Gallery">Gallery</a>
+    </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="/">Home</a>
+      <a href="/research">Research</a>
+      <a href="/publication">Publication</a>
+      <a href="/Gallery">Gallery</a>
+    </div>
+    <!-- ! Navbar End -->
+    <div class="background-container"></div>
+    <!-- Todo: section 3 -->
+    <div class="container">
+      <div class="page-title">
+        <h1>Cover Gallery</h1>
       </div>
-      <!-- ! Navbar End -->
-      <div class="background-container"></div>
-      <!-- Todo: section 3 -->
-      <div class="container">
-        <div class="page-title">
-          <h1>Publication</h1>
-        </div>
-        <div class="card-container" id="cardconjs">
-            
-          
-        </div>
+      <div class="card-container" id="cardOfCover"></div>
+      <div class="page-title">
+        <h1>Publication</h1>
+      </div>
+      <div class="card-container" id="cardconjs"></div>
     </div>
-      <div class="footer">
-        Copyright 2020, Biplab Manna
-    </div>
+    <div class="footer">Copyright 2020, Biplab Manna</div>
     <!-- ! don't warry this is only for script -->
     <script src="./Resources/js/jquery-3.5.1.min.js"></script>
     <script src="./Resources/js/brain.js"></script>
-    <script src="./Resources/js/publicationFetch.js"></script>  
+    <script src="./Resources/js/publicationFetch.js"></script>
   </body>
 </html>
