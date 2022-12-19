@@ -58,7 +58,7 @@ function init(data) {
       </div>`;
     }
     endstring = `<div class="btn-section">
-        <a href='https://admin.biplabchem.com${prop["pdf_link"]}' class="btn btn-yellow">Read More
+        <a href='${prop["pdf_link"]}' class="btn btn-yellow">Read More
         </a>
       </div>
   </div>
@@ -66,12 +66,18 @@ function init(data) {
     mainstring += strings + imagestring + endstring;
   }
   var cardContainerString =
-    '<div class="card-publication" style="display:flex; flex-direction:row; flex-wrap: wrap; padding-top:50px;   justify-content: center;">';
+    '<div class="card-publication" style="display:flex; flex-direction:row; flex-wrap: wrap; padding-top:50px; justify-content: flex-start;">';
   var imagestringCover = "";
   for (let prop of coverData) {
     if (!(prop["image"] === null || prop["image_filename"] === null)) {
-      imagestringCover += `<a href="${prop["link"]}" style="width:22%; margin-left: 10px; margin-right:10px; margin-bottom:20px" >
-          <img src="https://admin.biplabchem.com${prop["image"]}" alt="" style="width:100%"></a>`;
+      imagestringCover += `<a href="${
+        prop["link"].includes("https://")
+          ? prop["link"]
+          : "https://" + prop["link"]
+      }" target="_blank" style="width:22%; margin-left: 10px; margin-right:10px; margin-bottom:20px" >
+          <img src="https://admin.biplabchem.com${
+            prop["image"]
+          }" alt="" style="width:100%"></a>`;
     }
   }
   var lastString = "</div>";

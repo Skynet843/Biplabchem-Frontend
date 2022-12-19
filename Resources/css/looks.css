@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sansita+Swashed:wght@300;400;500;600;700;800;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 /* 
 font-family: 'Epilogue', sans-serif;
 font-family: 'Hind', sans-serif;
@@ -15,52 +15,53 @@ font-family: 'Sansita Swashed', cursive;
 font-family: 'Source Sans Pro', sans-serif;
 */
 
+
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-.blue{
+.blue {
   color: #3e7bf5;
 }
-.dark-blue{
-  color: #1DA1F2;
+.dark-blue {
+  color: #1da1f2;
 }
-.light-blue{
+.light-blue {
   color: #00c7eb;
 }
-body{
-    font-family: 'Open Sans', sans-serif;
-    
-    background-color: rgb(0, 0, 0);
+body {
+  font-family: "Open Sans", sans-serif;
+
+  background-color: rgb(0, 0, 0);
 }
 ::-webkit-scrollbar {
   width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(211, 211, 211, 0.3); 
+  -webkit-box-shadow: inset 0 0 6px rgba(211, 211, 211, 0.3);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgb(235, 0, 164); 
+  -webkit-box-shadow: inset 0 0 6px rgb(235, 0, 164);
 }
-#loading{
+#loading {
   position: fixed;
-  
+
   width: 100%;
   height: 100vh;
-  background : rgba(26, 26, 26, 0.95)
-  url("../img/loading.gif")
-  no-repeat center center;
-  backdrop-filter : blur(5px);
+  background: rgba(26, 26, 26, 0.95) url("../img/loading.gif") no-repeat center
+    center;
+  backdrop-filter: blur(5px);
   background-size: 250px;
   z-index: 1000;
 }
 .navbar-fluid {
-  color:white;
+  color: white;
   position: fixed;
   top: 0;
   left: 0;
@@ -71,7 +72,8 @@ body{
   /* backdrop-filter: blur(10px); */
   align-items: center;
   padding: 10px 0px;
-  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05), inset 0 -1px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   transition: all 250ms ease-in-out;
   /* border: 2px solid pink; */
 }
@@ -80,7 +82,7 @@ body{
   */
   background-color: transparent;
   width: 80%;
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -90,7 +92,7 @@ body{
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  align-items: center; 
+  align-items: center;
   /* border: 2px solid white; */
 }
 .brand h3 {
@@ -101,7 +103,6 @@ body{
   text-transform: uppercase;
   letter-spacing: 1px;
   /* text-align: center; */
-  
 }
 .nav-list {
   width: 100%;
@@ -124,7 +125,7 @@ body{
   font-style: normal;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
-  color:inherit;
+  color: inherit;
   border-radius: 5px;
   background-color: transparent;
   transition: 200ms ease-in-out;
@@ -135,7 +136,7 @@ body{
   font-style: normal;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
-  color:white;
+  color: white;
   background-color: #3276ff;
 }
 /* ! SideNav is Here */
@@ -175,8 +176,12 @@ body{
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 /* ! Background Graphics Start */
 .background-container {
@@ -193,13 +198,13 @@ body{
   object-position: top;
 }
 /* @media screen and (max-width:1800px){ */
-  .nav-list{
-    display: block;
-  }
-  .header-container span{
-    display: none;
-  }
-.container{
+.nav-list {
+  display: block;
+}
+.header-container span {
+  display: none;
+}
+.container {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -207,13 +212,13 @@ body{
   flex-direction: row;
   /* height: 100vh; */
 }
-.profile-aria{
+.profile-aria {
   width: 35%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.other-aria{
+.other-aria {
   margin-top: 120px;
   width: 70%;
   padding: 0px 20px;
@@ -222,7 +227,7 @@ body{
   justify-content: center;
   align-items: center;
 }
-.profile-card{
+.profile-card {
   position: fixed;
   top: 20%;
   max-width: 309px;
@@ -242,32 +247,32 @@ body{
   color: white;
 }
 
-.profile-card img{
+.profile-card img {
   height: 250px;
   width: 250px;
   object-fit: cover;
   border-radius: 5%;
 }
-.profile-card h3{
+.profile-card h3 {
   margin-top: 10px;
   font-size: 25px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
-  color: #6699FF;
+  color: #6699ff;
 }
-.profile-card p{
-  font-family: 'Open Sans', sans-serif;
+.profile-card p {
+  font-family: "Open Sans", sans-serif;
   padding: 5px 20px;
   font-size: 15px;
 }
-.profile-card p i{
+.profile-card p i {
   text-align: center;
   font-size: 35px;
   padding: 5px 20px;
 }
 
-.biocard{
-  font-family: 'Lato', sans-serif;
+.biocard {
+  font-family: "Lato", sans-serif;
   width: 95%;
   max-width: 690px;
   min-width: 690px;
@@ -276,14 +281,14 @@ body{
   background-color: rgba(0, 0, 0, 0.534);
   /* backdrop-filter: blur(5px); */
 }
-.mt-5{
+.mt-5 {
   margin-top: 20px;
 }
-.mass p{
+.mass p {
   font-size: 16px;
   line-height: 25px;
 }
-.heading{
+.heading {
   width: 100%;
   max-width: 870px;
   max-width: 690px;
@@ -291,52 +296,49 @@ body{
   padding: 0px 0px 10px 0px;
   display: flex;
 }
-.heading h2{
+.heading h2 {
   text-transform: uppercase;
-  font-family:  'Arial Narrow', Arial, sans-serif;
+  font-family: "Arial Narrow", Arial, sans-serif;
   letter-spacing: 1px;
   font-size: 25px;
   font-weight: 700;
   color: rgb(255, 255, 255);
 }
-.biocard p{
-  font-family: 'Lato', sans-serif;
+.biocard p {
+  font-family: "Lato", sans-serif;
   padding: 40px 30px;
   color: aliceblue;
   font-size: 16px;
 }
-.biocard p ul{
+.biocard p ul {
   list-style-type: disc;
   margin-left: 30px;
 }
 .biocard p ul li {
   margin-left: 50px;
 }
-.biocard p b{
+.biocard p b {
   /* color: rgb(209, 255, 4); */
-  color: #6699FF;
+  color: #6699ff;
   font-weight: 500;
 }
-.biocard p i{
+.biocard p i {
   color: rgb(179, 255, 0);
 }
 /* } */
 
-
-
 /* ! Publication card section is started here */
-
 
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
-.footer{
+.footer {
   background-color: #fff;
   line-height: 30px;
   font-size: 14px;
@@ -349,21 +351,22 @@ body{
 /* ! ================================================= */
 /* ! ================================================= */
 @media print {
-  html, body {
-     display: none;  /* hide whole page */
+  html,
+  body {
+    display: none; /* hide whole page */
   }
 }
 /* ! Viewport 1260 */
 /* TODO : Nothing to DO */
 /* ! Viewpoint 1260px */
-@media screen and (max-width: 1260px){
-  .nav-list{
+@media screen and (max-width: 1260px) {
+  .nav-list {
     display: block;
   }
-  .sidenav-icon{
+  .sidenav-icon {
     display: none;
   }
-  .container{
+  .container {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -371,15 +374,14 @@ body{
     flex-direction: row;
     /* height: 100vh; */
   }
-  .profile-aria{
-    
+  .profile-aria {
     width: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
     /* border: 2px solid white; */
   }
-  .other-aria{
+  .other-aria {
     margin-top: 120px;
     width: 60%;
     /* padding: 0px 20px; */
@@ -388,7 +390,7 @@ body{
     justify-content: center;
     align-items: center;
   }
-  .profile-card{
+  .profile-card {
     position: fixed;
     top: 20%;
     max-width: 263px;
@@ -407,35 +409,35 @@ body{
     /* backdrop-filter: blur(5px); */
     color: white;
   }
-  
-  .profile-card img{
+
+  .profile-card img {
     height: 200px;
     width: 200px;
     object-fit: cover;
     border-radius: 5%;
   }
-  .profile-card h3{
+  .profile-card h3 {
     margin-top: 10px;
     font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
-    color: #6699FF;
+    color: #6699ff;
   }
-  .profile-card p{
-    font-family: 'Open Sans', sans-serif;
+  .profile-card p {
+    font-family: "Open Sans", sans-serif;
     padding: 5px 10px;
-    
+
     font-size: 15px;
   }
-  .profile-card p i{
+  .profile-card p i {
     text-align: center;
     font-size: 30px;
     padding: 5px 10px;
   }
-  
-  .biocard{
+
+  .biocard {
     /* margin-top: 20px; */
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     width: 90%;
     max-width: 535px;
     min-width: 535px;
@@ -444,59 +446,59 @@ body{
     background-color: rgba(0, 0, 0, 0.534);
     /* backdrop-filter: blur(5px); */
   }
-  .mt-5{
+  .mt-5 {
     margin-top: 20px;
   }
-  .mass p{
+  .mass p {
     font-size: 16px;
     line-height: 25px;
   }
-  .heading{
+  .heading {
     width: 90%;
     max-width: 535px;
     min-width: 535px;
     padding: 0px 0px 10px 0px;
     display: flex;
   }
-  .heading h2{
+  .heading h2 {
     text-transform: uppercase;
-    font-family:  'Arial Narrow', Arial, sans-serif;
+    font-family: "Arial Narrow", Arial, sans-serif;
     letter-spacing: 1px;
     font-size: 25px;
     font-weight: 700;
     color: rgb(255, 255, 255);
   }
-  .biocard p{
-    font-family: 'Lato', sans-serif;
+  .biocard p {
+    font-family: "Lato", sans-serif;
     padding: 40px 30px;
     color: aliceblue;
     font-size: 16px;
   }
-  .biocard p ul{
+  .biocard p ul {
     list-style-type: disc;
     margin-left: 30px;
   }
   .biocard p ul li {
     margin-left: 50px;
   }
-  .biocard p b{
+  .biocard p b {
     /* color: rgb(209, 255, 4); */
-    color: #6699FF;
+    color: #6699ff;
     font-weight: 500;
   }
-  .biocard p i{
+  .biocard p i {
     color: rgb(179, 255, 0);
   }
 }
 /* ! Viewpoint 880px */
-@media screen and (max-width: 880px){
-  .nav-list{
+@media screen and (max-width: 880px) {
+  .nav-list {
     display: block;
   }
-  .sidenav-icon{
+  .sidenav-icon {
     display: none;
   }
-  .container{
+  .container {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -504,14 +506,14 @@ body{
     flex-direction: column;
     /* height: 100vh; */
   }
-  .profile-aria{
+  .profile-aria {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     /* border: 2px solid white; */
   }
-  .other-aria{
+  .other-aria {
     margin-top: 120px;
     width: 100%;
     /* padding: 0px 20px; */
@@ -520,7 +522,7 @@ body{
     justify-content: center;
     align-items: center;
   }
-  .profile-card{
+  .profile-card {
     position: relative;
     top: 80px;
     /* max-width: 290px; */
@@ -539,34 +541,34 @@ body{
     /* backdrop-filter: blur(5px); */
     color: white;
   }
-  
-  .profile-card img{
+
+  .profile-card img {
     height: 250px;
     width: 250px;
     object-fit: cover;
     border-radius: 5%;
   }
-  .profile-card h3{
+  .profile-card h3 {
     margin-top: 10px;
     font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
-    color: #6699FF;
+    color: #6699ff;
   }
-  .profile-card p{
-    font-family: 'Open Sans', sans-serif;
+  .profile-card p {
+    font-family: "Open Sans", sans-serif;
     padding: 5px 10px;
     font-size: 15px;
   }
-  .profile-card p i{
+  .profile-card p i {
     text-align: center;
     font-size: 30px;
     padding: 5px 10px;
   }
-  
-  .biocard{
+
+  .biocard {
     /* margin-top: 20px; */
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     width: 90%;
     /* max-width: 744px; */
     /* min-width: 740px; */
@@ -575,65 +577,65 @@ body{
     background-color: rgba(0, 0, 0, 0.534);
     /* backdrop-filter: blur(5px); */
   }
-  .mt-5{
+  .mt-5 {
     margin-top: 20px;
   }
-  .mass p{
+  .mass p {
     font-size: 16px;
     line-height: 25px;
   }
-  .heading{
+  .heading {
     width: 90%;
     /* max-width: 744px; */
     /* min-width: 744px; */
     padding: 0px 0px 10px 0px;
     display: flex;
   }
-  .heading h2{
+  .heading h2 {
     text-transform: uppercase;
-    font-family:  'Arial Narrow', Arial, sans-serif;
+    font-family: "Arial Narrow", Arial, sans-serif;
     letter-spacing: 1px;
     font-size: 25px;
     font-weight: 700;
     color: rgb(255, 255, 255);
   }
-  .biocard p{
-    font-family: 'Lato', sans-serif;
+  .biocard p {
+    font-family: "Lato", sans-serif;
     padding: 40px 30px;
     color: aliceblue;
     font-size: 16px;
   }
-  .biocard p ul{
+  .biocard p ul {
     list-style-type: disc;
     margin-left: 30px;
   }
   .biocard p ul li {
     margin-left: 50px;
   }
-  .biocard p b{
+  .biocard p b {
     /* color: rgb(209, 255, 4); */
-    color: #6699FF;
+    color: #6699ff;
     font-weight: 500;
   }
-  .biocard p i{
+  .biocard p i {
     color: rgb(179, 255, 0);
   }
 }
 /* ! 768 Viewpoint for Ipad */
-@media screen and (max-width: 768px){
-  .header-container span{
+@media screen and (max-width: 768px) {
+  .header-container span {
     display: block;
   }
-  .brand h3{
+  .brand h3 {
     font-size: 20px;
     font-weight: 800;
     text-align: center;
   }
-  .nav-list{
+  .nav-list {
     display: none;
   }
-  
-  .container{
+
+  .container {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -641,13 +643,13 @@ body{
     flex-direction: column;
     /* height: 100vh; */
   }
-  .profile-aria{
+  .profile-aria {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .profile-card{
+  .profile-card {
     position: relative;
     top: 90px;
     max-width: 290px;
@@ -666,8 +668,8 @@ body{
     /* backdrop-filter: blur(5px); */
     color: white;
   }
-  
-  .other-aria{
+
+  .other-aria {
     /* border: 2px solid white; */
     /* margin-top: 120px; */
     width: 100%;
@@ -677,8 +679,8 @@ body{
     justify-content: center;
     align-items: center;
   }
-  .biocard{
-    font-family: 'Lato', sans-serif;
+  .biocard {
+    font-family: "Lato", sans-serif;
     width: 60%;
     max-width: 445px;
     min-width: 350px;
@@ -686,14 +688,14 @@ body{
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.534);
   }
-  .mt-5{
+  .mt-5 {
     margin-top: 20px;
   }
-  .mass p{
+  .mass p {
     font-size: 18px;
     line-height: 25px;
   }
-  .heading{
+  .heading {
     width: 80%;
     min-width: 330px;
     max-width: 443px;
@@ -701,65 +703,64 @@ body{
     display: flex;
     justify-content: center;
   }
-  .heading h2{
+  .heading h2 {
     text-transform: uppercase;
-    font-family:  'Arial Narrow', Arial, sans-serif;
+    font-family: "Arial Narrow", Arial, sans-serif;
     letter-spacing: 1px;
     font-size: 25px;
     font-weight: 700;
     color: rgb(255, 255, 255);
   }
-  .biocard p{
-    font-family: 'Lato', sans-serif;
+  .biocard p {
+    font-family: "Lato", sans-serif;
     padding: 40px 18px;
     color: aliceblue;
     font-size: 16px;
     text-align: left;
   }
-  .biocard p ul{
+  .biocard p ul {
     list-style-type: disc;
     margin-left: 30px;
   }
   .biocard p ul li {
     margin-left: 50px;
   }
-  .biocard p b{
-    color: #6699FF;
+  .biocard p b {
+    color: #6699ff;
     font-weight: 500;
   }
-  .biocard p i{
+  .biocard p i {
     color: rgb(179, 255, 0);
   }
 }
 /* Todo : Master of the seo */
 /* ! 376px viewpoint */
-@media screen and (max-width: 376px){
-  .header-container span{
+@media screen and (max-width: 376px) {
+  .header-container span {
     display: block;
   }
-  .brand h3{
+  .brand h3 {
     font-size: 20px;
     font-weight: 800;
     text-align: center;
   }
-  .nav-list{
+  .nav-list {
     display: none;
   }
-  .container{
-  
+  .container {
     display: flex;
     width: 100%;
     justify-content: center;
     align-content: center;
     flex-direction: column;
   }
-  .profile-aria{
+  .profile-aria {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .profile-card{
+  .profile-card {
     position: relative;
     top: 90px;
     width: 80%;
@@ -775,15 +776,15 @@ body{
     background-color: rgba(0, 0, 0, 0.486);
     color: white;
   }
-  .other-aria{
+  .other-aria {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .biocard{
-    font-family: 'Lato', sans-serif;
+  .biocard {
+    font-family: "Lato", sans-serif;
     width: 80%;
     max-width: 350px;
     min-width: 330px;
@@ -791,45 +792,45 @@ body{
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.534);
   }
-  .mt-5{
+  .mt-5 {
     margin-top: 20px;
   }
-  .mass p{
+  .mass p {
     font-size: 18px;
     line-height: 25px;
   }
-  .heading{
+  .heading {
     width: 50%;
     display: flex;
     justify-content: center;
   }
-  .heading h2{
+  .heading h2 {
     text-transform: uppercase;
-    font-family:  'Arial Narrow', Arial, sans-serif;
+    font-family: "Arial Narrow", Arial, sans-serif;
     letter-spacing: 1px;
     font-size: 25px;
     font-weight: 700;
     color: rgb(255, 255, 255);
   }
-  .biocard p{
-    font-family: 'Lato', sans-serif;
+  .biocard p {
+    font-family: "Lato", sans-serif;
     padding: 40px 18px;
     color: aliceblue;
     font-size: 16px;
     text-align: left;
   }
-  .biocard p ul{
+  .biocard p ul {
     list-style-type: disc;
     margin-left: 30px;
   }
   .biocard p ul li {
     margin-left: 50px;
   }
-  .biocard p b{
-    color: #6699FF;
+  .biocard p b {
+    color: #6699ff;
     font-weight: 500;
   }
-  .biocard p i{
+  .biocard p i {
     color: rgb(179, 255, 0);
   }
   .background-container {
@@ -845,4 +846,24 @@ body{
     object-fit: cover;
     object-position: top;
   }
+}
+
+/* unvisited link */
+a:link {
+  color: rgb(6, 232, 240);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(4, 121, 255);
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: rgb(255, 217, 2);
 }
