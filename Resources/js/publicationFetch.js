@@ -1,6 +1,6 @@
 $(document).ready(() => {
-  var url = "https://admin.biplabchem.com/get-publication";
-  var urlForCover = "https://admin.biplabchem.com/get-cover_photo";
+  var url = ADMIN_BASE_URL + "/get-publication";
+  var urlForCover = ADMIN_BASE_URL + "/get-cover_photo";
   var dataForCover = '{"accesskey":"9494"}';
   var paramsForCover = {
     method: "post",
@@ -54,7 +54,7 @@ function init(data) {
 
     if (!(prop["image"] === null || prop["image_filename"] === null)) {
       imagestring = `<div class="card-images">
-          <img src="https://admin.biplabchem.com${prop["image"]}" alt="">
+          <img src="${ADMIN_BASE_URL}${prop["image"]}" alt="">
       </div>`;
     }
     endstring = `<div class="btn-section">
@@ -75,9 +75,9 @@ function init(data) {
           ? prop["link"]
           : "https://" + prop["link"]
       }" target="_blank" style="width:22%; margin-left: 10px; margin-right:10px; margin-bottom:20px" >
-          <img src="https://admin.biplabchem.com${
-            prop["image"]
-          }" alt="" style="width:100%"></a>`;
+          <img src="${ADMIN_BASE_URL}${
+        prop["image"]
+      }" alt="" style="width:100%"></a>`;
     }
   }
   var lastString = "</div>";

@@ -1,5 +1,5 @@
 $(document).ready(() => {
-  url = "https://admin.biplabchem.com/get-profile";
+  url = ADMIN_BASE_URL + "/get-profile";
   data = '{"accesskey":"9494"}';
   params = {
     method: "post",
@@ -17,7 +17,7 @@ $(document).ready(() => {
   fetchandchange("members", "committee");
 });
 function fetchandchange(categ, boxId) {
-  url = "https://admin.biplabchem.com/get-details-by-category";
+  url = ADMIN_BASE_URL + "/get-details-by-category";
   data = `{"accesskey":"9494", "category" : "${categ}"}`;
   params = {
     method: "post",
@@ -49,7 +49,7 @@ function init(data) {
   document.querySelector("#fullbiojs").innerHTML = datas["full_bio"];
   document.querySelector("#facebookjs").href = datas["facebook"];
   document.querySelector("#linkedinjs").href = datas["linkdin"];
-//   document.querySelector("#twitterjs").href = datas["twitter"];
+  //   document.querySelector("#twitterjs").href = datas["twitter"];
   document.querySelector("#contactnamejs").innerHTML = datas["name"];
   document.querySelector("#contactnumberjs").innerHTML = datas["phone_no"];
   document.querySelector("#contactemailjs").innerHTML = datas["email"];
